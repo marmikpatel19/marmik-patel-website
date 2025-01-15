@@ -1,11 +1,16 @@
+import { JSX } from "react";
 import Navigation from "./components/navigation";
 import TextBlock from "./components/textblock";
 
 export default function Home() {
-  const lines: string[] = [
+  const lines: (string | JSX.Element)[] = [
     "Hey, I’m Marmik",
     "An engineer and founder from canada. I am often in sf and nyc",
-    "Currently building an hr-tech startup in sf, Agent-jobs, and running a tree-planting nonprofit in canada, PlantForever",
+    <>
+      Currently building an hr-tech startup in sf,{" "}  
+      <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a> 
+      ,{" "}and running a tree-planting nonprofit in canada,{" "}<a href="https://plantforever.org" className="underline">PlantForever</a>
+    </>,
     "I’m studying cs and in my senior year of college"
   ];
 
