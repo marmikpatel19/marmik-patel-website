@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import Navigation from "./components/navigation";
 import TextBlock from "./components/textblock";
+import Image from "next/image";
 
 export default function Home() {
   const lines: (string | JSX.Element)[] = [
@@ -15,9 +16,20 @@ export default function Home() {
   ];
 
   return (
-    <div className="max-w-custom mx-auto pl-10 pr-10">
+    <div className="max-w-custom mx-auto pl-16 pr-16">
       <Navigation />
-      <TextBlock width="max-w-lg" lines={lines} />
+      <div className="flex mt-48 items-end">
+        <TextBlock width="max-w-lg" lines={lines} />
+        <div className="max-w-32 ml-10">
+          <Image 
+            src="/images/Marmik_Patel.jpg"  
+            alt="Marmik Patel"
+            width={2125} // original resolution (update this if you crop image)
+            height={2620} // original resolution (update this if you crop image)
+            className="rounded-lg"
+          /> 
+        </div>
+      </div>
     </div>
   );
 }
