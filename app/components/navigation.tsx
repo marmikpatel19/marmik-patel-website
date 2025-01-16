@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Navigation(){
     return (
-        <div className="flex justify-between mt-6">
+        <div className="flex flex-col sm:flex-row justify-between mt-6">
             <div className="font-semibold">Marmik Patel</div>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 mt-4 sm:mt-0">
                 <Link className="underline font-semibold" href="/engineer">
                     Engineer
                 </Link>
