@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="max-w-custom mx-auto pl-10 sm:pl-16 pr-10 sm:pr-16 mb-10 sm:mb-0">
       <Navigation />
-      <div className="flex flex-col sm:flex-row mt-24 sm:mt-48  sm:items-end">
+      <div className="flex flex-col sm:flex-row mt-24 sm:mt-48 sm:items-end">
         <TextBlock width="max-w-lg" lines={lines} />
         <div className="max-w-32 ml-0 sm:ml-10 mt-8 sm:mt-0">
           <Image 
