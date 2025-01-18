@@ -10,7 +10,8 @@ export default function Home() {
     <>
       Currently building an hr-tech startup in sf,{" "}  
       <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a> 
-      ,{" "}and running a tree-planting nonprofit in canada,{" "}<a href="https://plantforever.org" className="underline">PlantForever</a>
+      , and running a tree-planting nonprofit in canada,{" "}
+      <a href="https://plantforever.org" className="underline">PlantForever</a>
     </>,
     "I’m studying cs and in my senior year of college"
   ];
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <div className="max-w-custom mx-auto pl-10 sm:pl-16 pr-10 sm:pr-16 mb-10 sm:mb-0">
       <Navigation />
-      <div className="flex flex-col sm:flex-row mt-24 sm:mt-48 sm:items-end">
+      <div className="flex flex-col sm:flex-row mt-24 sm:mt-40 sm:items-end">
         <TextBlock width="max-w-lg" lines={lines} />
         <div className="max-w-32 ml-0 sm:ml-10 mt-8 sm:mt-0">
           <Image 
