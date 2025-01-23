@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Founder(){
     const lines: (string | JSX.Element)[] = [
-        "I find purpose in building. I love the 0-1.",
+        "I find purpose in building. I love the 0-to-1.",
         <>
             I’m currently building{" "}
             <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a>
@@ -25,27 +25,42 @@ export default function Founder(){
                 <TextBlock width="max-w-xl" lines={lines} />
             </div>
             <div className="flex flex-col md:flex-row mt-8 sm:mt-9 space-x-8 mb-8">
-                <Image 
-                    src="/images/Marmik_Patel_Agent_Jobs_Launch.png"  
-                    alt="Marmik Patel Agent-Jobs Launch Post"
-                    width={200} // original resolution (update this if you crop image)
-                    height={197} // original resolution (update this if you crop image)
-                    className="rounded-lg"
-                /> 
-                <Image 
-                    src="/images/Marmik_Patel_PlantForever_CBC_Canada_Article.png"  
-                    alt="Marmik Patel PlantForever CBC Canada News Article"
-                    width={210} // original resolution (update this if you crop image)
-                    height={207} // original resolution (update this if you crop image)
-                    className="rounded-lg"
-                /> 
-                <Image 
-                    src="/images/Marmik_Patel_PlantForever_Global_News_Article.png"  
-                    alt="Marmik Patel PlantForever Global News News Article"
-                    width={210} // original resolution (update this if you crop image)
-                    height={207} // original resolution (update this if you crop image)
-                    className="rounded-lg"
-                /> 
+                <div className="flex flex-col">
+                    <a href="https://www.linkedin.com/posts/marmikp_buildspace-activity-7225964189964541952-R7Ya" target="_blank" rel="noopener noreferrer">
+                        <Image 
+                            src="/images/Marmik_Patel_Agent_Jobs_Launch.png"  
+                            alt="Marmik Patel Agent-Jobs Launch Post"
+                            width={200} // original resolution (update this if you crop image)
+                            height={197} // original resolution (update this if you crop image)
+                            className="rounded-lg"
+                        /> 
+                        <p className="mt-2 text-sm">agent-jobs mvp launch post</p>
+                    </a>
+                </div>
+                <div className="flex flex-col">
+                    <a href="https://www.cbc.ca/radio/whatonearth/how-to-plant-a-tree-in-2023-1.6967362" target="_blank" rel="noopener noreferrer">
+                        <Image 
+                            src="/images/Marmik_Patel_PlantForever_CBC_Canada_Article.png"  
+                            alt="Marmik Patel PlantForever CBC Canada News Article"
+                            width={200} // original resolution (update this if you crop image)
+                            height={197} // original resolution (update this if you crop image)
+                            className="rounded-lg"
+                        /> 
+                        <p className="mt-1 text-sm">plantforever cbc canada news article</p>
+                    </a>
+                </div>
+                <div className="flex flex-col">
+                    <a href="https://globalnews.ca/news/9166036/edmonton-youth-climate-change-trees" target="_blank" rel="noopener noreferrer">
+                        <Image 
+                            src="/images/Marmik_Patel_PlantForever_Global_News_Article.png"  
+                            alt="Marmik Patel PlantForever Global TV Segment"
+                            width={200} // original resolution (update this if you crop image)
+                            height={197} // original resolution (update this if you crop image)
+                            className="rounded-lg"
+                        /> 
+                        <p className="mt-3 text-sm">plantforever global news tv segment</p>
+                    </a>
+                </div>
             </div>
         </div>
     );
