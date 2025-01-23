@@ -28,7 +28,7 @@ export default function Engineer(){
     return (
         <div className="max-w-custom mx-auto pl-10 sm:pl-16 pr-10 sm:pr-16 mb-10 sm:mb-0">
             <Navigation />
-            <div className="flex flex-col sm:flex-row mt-16 sm:mt-48 sm:items-end">
+            <div className="flex flex-col sm:flex-row mt-16 sm:mt-40 sm:items-end">
                 <TextBlock width="max-w-xl" lines={lines} />
             </div>
         </div>
