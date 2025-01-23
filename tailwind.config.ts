@@ -14,7 +14,10 @@ export default {
       },
       maxWidth: {
         custom: '900px',
-      }
+      },
+      screens: {
+        xs: '475px', 
+      },
     },
   },
   plugins: [],
