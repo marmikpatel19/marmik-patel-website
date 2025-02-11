@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Founder(){
     const lines: (string | JSX.Element)[] = [
-        "I find purpose in building. I love the 0-to-1.",
+        "I love the 0-to-1.",
         <>
             I’m currently building{" "}
             <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a>
