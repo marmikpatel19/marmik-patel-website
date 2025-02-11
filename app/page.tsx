@@ -9,9 +9,9 @@ export default function Home() {
     "An engineer and founder from canada. I am often in sf and nyc",
     <>
       Currently building an hr-tech startup in sf,{" "}  
-      <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a> 
+      <a href="https://www.agent-jobs.com" className="underline" target="_blank" rel="noopener noreferrer">Agent-jobs</a> 
       , and running a tree-planting nonprofit in canada,{" "}
-      <a href="https://plantforever.org" className="underline">PlantForever</a>
+      <a href="https://plantforever.org" className="underline" target="_blank" rel="noopener noreferrer">PlantForever</a>
     </>,
     "I’m studying cs and in my senior year of college"
   ];

@@ -8,12 +8,12 @@ export default function Founder(){
         "I love the 0-to-1.",
         <>
             I’m currently building{" "}
-            <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a>
+            <a href="https://www.agent-jobs.com" className="underline" target="_blank" rel="noopener noreferrer">Agent-jobs</a>
             , an hr-tech platform where you hire real people to apply to jobs for you. 
         </>,
         <>
             Since I was 15, I’ve been running a nonprofit in Canada,{" "}
-            <a href="https://plantforever.org" className="underline">PlantForever</a>. 
+            <a href="https://plantforever.org" className="underline" target="_blank" rel="noopener noreferrer">PlantForever</a>. 
             We do private-property tree planting. I lead a team of 11 across two cities.  
         </>
     ];

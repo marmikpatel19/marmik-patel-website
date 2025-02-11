@@ -17,11 +17,11 @@ export default function Engineer(){
         </>,
         <>
             I’ve been developing a lot of projects, often through hackathons. In the past few months, I’ve built at{" "}  
-            <a href="https://www.linkedin.com/posts/marmikp_i-built-an-ai-agent-that-you-speak-to-over-activity-7242215855751610368-9t8C" className="underline" target="_blank">MIT</a> 
+            <a href="https://www.linkedin.com/posts/marmikp_i-built-an-ai-agent-that-you-speak-to-over-activity-7242215855751610368-9t8C" className="underline" target="_blank" rel="noopener noreferrer">MIT</a> 
             ,{" "}
-            <a href="https://www.linkedin.com/posts/marmikp_i-just-spent-the-weekend-at-harvard-university-activity-7252000316198461441-rd45" className="underline" target="_blank">Harvard</a> 
+            <a href="https://www.linkedin.com/posts/marmikp_i-just-spent-the-weekend-at-harvard-university-activity-7252000316198461441-rd45" className="underline" target="_blank" rel="noopener noreferrer">Harvard</a> 
             , and{" "}
-            <a href="https://www.linkedin.com/posts/marmikp_hackathon-computerscience-calhacks-activity-7262169796333469696-CE2F" className="underline" target="_blank">Berkeley</a>.
+            <a href="https://www.linkedin.com/posts/marmikp_hackathon-computerscience-calhacks-activity-7262169796333469696-CE2F" className="underline" target="_blank" rel="noopener noreferrer">Berkeley</a>.
         </>,
     ];
 
