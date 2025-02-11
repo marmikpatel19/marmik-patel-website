@@ -1,6 +1,6 @@
 "use client";
 
-import { JSX } from "react";
+import { JSX, useEffect, useRef } from "react";
 import Navigation from "../components/navigation";
 import TextBlock from "../components/textblock";
 import { useForm } from "@formspree/react";
@@ -25,11 +25,14 @@ export default function Connect(){
         </>,
     ];
 
-    const [state, handleSubmit] = useForm("FORM_ID");
+    const formRef = useRef<HTMLFormElement>(null);
+    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_CONTACT_FORM_ID || "");
 
-    if (state.succeeded) {
-        return <p>Thanks for reaching out :)</p>;
-    }
+    useEffect(() => {
+        if (state.succeeded && formRef.current) {
+          formRef.current.reset();
+        }
+      }, [state.succeeded]);
 
     return (
         <div className="max-w-custom mx-auto pl-10 sm:pl-16 pr-10 sm:pr-16 mb-10 sm:mb-0">
@@ -37,7 +40,7 @@ export default function Connect(){
             <div className="flex flex-col md:flex-row mt-16 sm:mt-40 sm:items-end gap-10 mb-36">
                 <TextBlock width="max-w-md" lines={lines} />
 
-                <form className="grid gap-y-4 mt-10 sm:mt-24" onSubmit={handleSubmit}>
+                <form className="grid gap-y-4 mt-10 sm:mt-24" onSubmit={handleSubmit} ref={formRef}>
                     <p className="block text-foreground text-lg">Reach out:</p>
 
                     <div className="flex items-start gap-x-8 w-24">
@@ -84,6 +87,7 @@ export default function Connect(){
                             Submit
                         </button>
                     </div>
+                    {state.succeeded && <p>Thanks for reaching out!</p>}
                 </form>
             </div>
         </div>
