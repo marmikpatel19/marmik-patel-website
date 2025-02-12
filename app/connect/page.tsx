@@ -81,7 +81,7 @@ export default function Connect(){
 
                     <div className="flex flex-row-reverse gap-x-6 w-24 ml-64">
                         <button
-                            className="cursor-pointer rounded-lg bg-white px-3 text-lg text-foreground border-2 border-gray-300"
+                            className="cursor-pointer rounded-lg bg-white dark:bg-black px-3 text-lg text-foreground border-2 border-gray-300"
                             type="submit"
                         >
                             Submit
