@@ -48,7 +48,7 @@ export default function Connect(){
                             name:
                         </label>
                         <input
-                            className="flex-1 h-12 rounded-lg border border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
+                            className="flex-1 h-12 border-2 rounded-lg border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
                             id="name"
                             name="name"
                             required
@@ -60,7 +60,7 @@ export default function Connect(){
                             email:
                         </label>
                         <input
-                            className="flex-1 h-12 rounded-lg border border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
+                            className="flex-1 h-12 rounded-lg border-2 border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
                             id="email"
                             name="email"
                             required
@@ -72,7 +72,7 @@ export default function Connect(){
                             message:
                         </label>
                         <textarea
-                            className="resize-y flex-1 h-12 min-w-[264px] rounded-lg border border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
+                            className="resize-y flex-1 h-12 min-w-[264px] rounded-lg border-2 border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
                             id="message"
                             name="message"
                             required
@@ -81,7 +81,7 @@ export default function Connect(){
 
                     <div className="flex flex-row-reverse gap-x-6 w-24 ml-64">
                         <button
-                            className="cursor-pointer rounded-lg bg-white px-3 text-lg text-foreground border border-gray-300"
+                            className="cursor-pointer rounded-lg bg-white px-3 text-lg text-foreground border-2 border-gray-300"
                             type="submit"
                         >
                             Submit
