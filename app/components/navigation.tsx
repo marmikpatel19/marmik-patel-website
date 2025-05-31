@@ -9,7 +9,7 @@ export default function Navigation(){
                 Marmik Patel
                 </Link>
             </div>
-            <div className="flex space-x-6 mt-4 sm:mt-0">
+            <div className="space-x-2 xs2x:space-x-6 mt-4 sm:mt-0">
                 <Link className="underline font-semibold" href="/engineer">
                     Engineer
                 </Link>
