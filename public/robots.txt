@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://marmikpatel.com
+
+# Sitemaps
+Sitemap: https://marmikpatel.com/sitemap.xml
