@@ -5,7 +5,7 @@ import TextBlock from "../components/textblock";
 export default function Engineer(){
     const lines: (string | JSX.Element)[] = [
         <>
-            I just graduated. I'm incoming as a software engineer at [redacted] in the bay.
+            I just graduated. I&apos;m incoming as a software engineer at [redacted] in the bay.
         </>,
         <>
             I have experience building{" "}
