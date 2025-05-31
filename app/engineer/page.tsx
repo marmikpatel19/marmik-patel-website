@@ -14,7 +14,7 @@ export default function Engineer(){
             <a href="https://www.7shifts.com" className="underline">series-c startup</a>.   
         </>,
         <>
-            I’ve been developing projects, often through hackathons. I’ve built at{" "}  
+            I&apos;ve been developing projects, often through hackathons. I&apos;ve built at{" "}  
             <a href="https://www.linkedin.com/posts/marmikp_i-built-an-ai-agent-that-you-speak-to-over-activity-7242215855751610368-9t8C" className="underline" target="_blank" rel="noopener noreferrer">MIT</a> 
             ,{" "}
             <a href="https://www.linkedin.com/posts/marmikp_i-just-spent-the-weekend-at-harvard-university-activity-7252000316198461441-rd45" className="underline" target="_blank" rel="noopener noreferrer">Harvard</a> 
