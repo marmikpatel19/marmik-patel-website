@@ -8,19 +8,19 @@ import { useForm } from "@formspree/react";
 export default function Connect(){
     const lines: (string | JSX.Element)[] = [
         <>
-            I use instagram as my casual social media. I post my day-to-day life as stories:{" "}  
+            insta:{" "}  
             <a href="https://www.instagram.com/marmikpatel_" className="underline" target="_blank" rel="noopener noreferrer">@marmikpatel_</a> 
         </>,
         <>
-            I use linkedin quite a bit. I post often about my life experiences, swe work, and founder work:{" "}  
+            linkedin:{" "}  
             <a href="https://www.linkedin.com/in/marmikp" className="underline" target="_blank" rel="noopener noreferrer">@marmikp</a> 
         </>,
         <>
-            Twitter:{" "}  
+            twitter:{" "}  
             <a href="https://x.com/Marmik_Patel19" className="underline" target="_blank" rel="noopener noreferrer">@Marmik_Patel19</a> 
         </>,
         <>
-            A youtube channel where I share my thoughts:{" "}  
+            youtube where I share my thoughts:{" "}  
             <a href="https://www.youtube.com/@MarmikThinks" className="underline" target="_blank" rel="noopener noreferrer">@MarmikThinks</a> 
         </>,
     ];
@@ -35,61 +35,58 @@ export default function Connect(){
       }, [state.succeeded]);
 
     return (
-        <div className="max-w-custom mx-auto pl-10 sm:pl-16 pr-10 sm:pr-16 mb-10 sm:mb-0">
+        <div className="max-w-custom mx-auto px-6 sm:px-16 mb-10 sm:mb-0">
             <Navigation />
-            <div className="flex flex-col md:flex-row mt-16 sm:mt-40 sm:items-end gap-10 mb-36">
+            <div className="flex flex-col md:flex-row mt-16 md:mt-36 gap-12 items-start">
                 <TextBlock width="max-w-md" lines={lines} />
 
-                <form className="grid gap-y-4 mt-10 sm:mt-24" onSubmit={handleSubmit} ref={formRef}>
-                    <p className="block text-foreground text-lg">Reach out:</p>
+                <form
+                    className="flex flex-col gap-y-4 w-full max-w-sm"
+                    onSubmit={handleSubmit}
+                    ref={formRef}
+                >
+                    <p className="text-lg font-medium">Reach out:</p>
 
-                    <div className="flex items-start gap-x-12 w-24">
-                        <label className="w-24 text-left -mt-1" htmlFor="name">
-                            name:
-                        </label>
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="name" className="text-left text-sm">name:</label>
                         <input
-                            className="min-w-[200px] xs:min-w-[248px] flex-1 h-12 border-2 rounded-lg border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
                             id="name"
                             name="name"
                             required
+                            className="h-12 rounded-lg border border-gray-300 dark:border-gray-600 px-4 bg-background text-foreground outline-none focus:ring-2 focus:ring-foreground"
                         />
                     </div>
 
-                    <div className="flex items-start gap-x-12 w-24">
-                        <label className="w-24 text-left -mt-1" htmlFor="email">
-                            email:
-                        </label>
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="email" className="text-left text-sm">email:</label>
                         <input
-                            className="min-w-[200px] xs:min-w-[250px] flex-1 h-12 rounded-lg border-2 border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
                             id="email"
                             name="email"
                             required
+                            className="h-12 rounded-lg border border-gray-300 dark:border-gray-600 px-4 bg-background text-foreground outline-none focus:ring-2 focus:ring-foreground"
                         />
                     </div>
 
-                    <div className="flex items-start gap-x-4 w-24 ">
-                        <label className="w-24 text-left -mt-1" htmlFor="message">
-                            message:
-                        </label>
+                    <div className="flex flex-col gap-1">
+                        <label htmlFor="message" className="text-left text-sm">message:</label>
                         <textarea
-                            className="resize-y flex-1 h-12 min-w-[200px] xs:min-w-[250px] rounded-lg border-2 border-gray-300 dark:border-gray-600 px-4 text-foreground bg-background outline-none focus:ring-2 focus:ring-foreground placeholder:text-gray-500 dark:placeholder:text-gray-400"
                             id="message"
                             name="message"
                             required
+                            className="min-h-[100px] resize-y rounded-lg border border-gray-300 dark:border-gray-600 px-4 py-2 bg-background text-foreground outline-none focus:ring-2 focus:ring-foreground"
                         />
                     </div>
 
-                    <div className="flex flex-row-reverse gap-x-6 w-24 ml-52 xs:ml-64">
-                        <button
-                            className="cursor-pointer rounded-lg bg-white dark:bg-black px-3 text-lg text-foreground border-2 border-gray-300"
-                            type="submit"
-                        >
-                            Submit
-                        </button>
-                    </div>
-                    {state.succeeded && <p>Thanks for reaching out!</p>}
+                    <button
+                        type="submit"
+                        className="self-start px-4 py-2 text-lg rounded-lg border border-gray-300 dark:border-gray-600 text-foreground bg-white dark:bg-black"
+                    >
+                        Submit
+                    </button>
+
+                    {state.succeeded && <p className="text-sm mt-2">Thanks for reaching out!</p>}
                 </form>
             </div>
-        </div>
+            </div>
     );
 }
