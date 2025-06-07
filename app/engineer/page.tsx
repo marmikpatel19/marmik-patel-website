@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import Navigation from "../components/navigation";
 import TextBlock from "../components/textblock";
+import Image from "next/image";
 
 export default function Engineer(){
     const lines: (string | JSX.Element)[] = [
@@ -32,6 +33,35 @@ export default function Engineer(){
             <Navigation />
             <div className="flex flex-col sm:flex-row mt-10 sm:mt-40 sm:items-end">
                 <TextBlock width="max-w-xl" lines={lines} />
+            </div>
+            <div className="flex flex-col md:flex-row mt-8 sm:mt-9 md:space-x-8 mb-8 items-start">
+                {[
+                    {
+                        href: "https://www.cbc.ca/listen/live-radio/1-88-saskatoon-morning/clip/16140779-how-u-s-student-spends-ivy-league-campuses",
+                        src: "/images/Marmik_Patel_Hackathon_CBC_News_Radio.png",
+                        alt: "Marmik Patel CBC Saskatoon Radio Hackathon News Interview",
+                        label: "cbc news radio interview about hackathons",
+                    },
+                ].map(({ href, src, alt, label }) => (
+                    <div className="flex flex-col mt-8 md:mt-0" key={href}>
+                        <a href={href} target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src={src}
+                                alt={alt}
+                                width={240}
+                                height={160}
+                                className="rounded-lg w-full h-auto sm:w-[240px] sm:h-[160px] object-cover"
+                            />
+                            <p className="mt-2 text-sm w-full sm:w-[240px]">{label}</p>
+                            <audio 
+                                controls 
+                                src="/audio/How this U of S student spends more time at Ivy League campuses.mp3" 
+                                className="w-full sm:w-[240px] mt-3 -ml-2"
+                            >
+                            </audio>
+                        </a>
+                    </div>
+                ))}
             </div>
         </div>
     );
