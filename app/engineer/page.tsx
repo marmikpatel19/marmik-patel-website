@@ -5,9 +5,7 @@ import Image from "next/image";
 
 export default function Engineer(){
     const lines: (string | JSX.Element)[] = [
-        <>
-            I'm a software engineer at meta in the bay, working on whatsapp.
-        </>,
+        "I'm a software engineer at meta in the bay, working on whatsapp.",
         <>
             I have experience building{" "}
             <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a>
