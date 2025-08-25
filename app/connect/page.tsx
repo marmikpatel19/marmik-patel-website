@@ -20,8 +20,16 @@ export default function Connect(){
             <a href="https://x.com/Marmik_Patel19" className="underline" target="_blank" rel="noopener noreferrer">@Marmik_Patel19</a> 
         </>,
         <>
-            youtube where I share my thoughts:{" "}  
-            <a href="https://www.youtube.com/@MarmikThinks" className="underline" target="_blank" rel="noopener noreferrer">@MarmikThinks</a> 
+            content channel one: MarmikThinks:{" "}  
+            <a href="https://www.youtube.com/@MarmikThinks" className="underline" target="_blank" rel="noopener noreferrer">youtube</a>,{" "}
+            <a href="https://www.instagram.com/marmikthinks" className="underline" target="_blank" rel="noopener noreferrer">insta</a>,{" "}
+            <a href="https://www.tiktok.com/@marmikthinks" className="underline" target="_blank" rel="noopener noreferrer">tiktok</a> 
+        </>,
+        <>
+        content channel two: MarmikLives:{" "}  
+            <a href="https:/www.youtube.com/@MarmikLives" className="underline" target="_blank" rel="noopener noreferrer">youtube</a>,{" "}
+            <a href="https://www.instagram.com/marmiklives" className="underline" target="_blank" rel="noopener noreferrer">insta</a>,{" "}
+            <a href="https://www.tiktok.com/@marmiklives" className="underline" target="_blank" rel="noopener noreferrer">tiktok</a> 
         </>,
     ];
 
