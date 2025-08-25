@@ -6,12 +6,8 @@ import Image from "next/image";
 export default function Home() {
   const lines: (string | JSX.Element)[] = [
     "Hey, I’m Marmik",
-    "A 22 y/o engineer and founder from canada. In sf & nyc",
-    <>
-      Currently working on some ai projects & content in new york and running a tree-planting nonprofit,{" "}
-      <a href="https://plantforever.org" className="underline" target="_blank" rel="noopener noreferrer">PlantForever</a>
-    </>,
-    "I just graduated and am incoming as a swe at [redacted]"
+    "A 23 y/o engineer and founder from canada. In sf & nyc",
+    "Currently working at meta as a swe, doing content, and running a nonprofit"
   ];
 
   return (

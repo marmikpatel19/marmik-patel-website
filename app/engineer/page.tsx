@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Engineer(){
     const lines: (string | JSX.Element)[] = [
         <>
-            I just graduated. I&apos;m incoming as a software engineer at [redacted] in the bay.
+            I'm a software engineer at meta in the bay, working on whatsapp.
         </>,
         <>
             I have experience building{" "}
