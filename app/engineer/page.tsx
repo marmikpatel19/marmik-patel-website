@@ -7,9 +7,7 @@ export default function Engineer(){
     const lines: (string | JSX.Element)[] = [
         "I'm a software engineer at meta in the bay, working on whatsapp.",
         <>
-            I have experience building{" "}
-            <a href="https://www.agent-jobs.com" className="underline">Agent-jobs</a>
-            , and last year I worked on payments at a{" "}
+            I have experience building a startup and have worked on payments at a{" "}
             <a href="https://www.7shifts.com" className="underline">series-c startup</a>.   
         </>,
         <>

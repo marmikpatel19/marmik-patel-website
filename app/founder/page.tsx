@@ -7,9 +7,7 @@ export default function Founder(){
     const lines: (string | JSX.Element)[] = [
         "I love the 0-to-1.",
         <>
-            I’m currently working on a few projects. Built {" "}
-            <a href="https://www.agent-jobs.com" className="underline" target="_blank" rel="noopener noreferrer">Agent-jobs</a>
-            , a recruitment-tech platform where you hire people to apply to jobs. 
+            I’m currently working on a few projects. Previously built a recruitment-tech platform where you hire people to apply to jobs. 
         </>,
         <>
             Since I was 15, I’ve been running a nonprofit in Canada,{" "}
